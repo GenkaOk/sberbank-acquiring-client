@@ -15,10 +15,10 @@ matrix:
 
 before_install:
     - composer self-update
-    - travis_retry wget -O ~/.phpenv/versions/7.0/bin/phpunit https://phar.phpunit.de/phpunit-6.phar
-    - chmod +x ~/.phpenv/versions/7.0/bin/phpunit
-    - travis_retry wget -O ~/.phpenv/versions/7.0/bin/php-cs-fixer https://cs.symfony.com/download/php-cs-fixer-v2.phar
-    - chmod +x ~/.phpenv/versions/7.0/bin/php-cs-fixer
+    - travis_retry wget -O ~/tools/phpunit https://phar.phpunit.de/phpunit-6.phar
+    - chmod +x ~/tools/phpunit
+    - travis_retry wget -O ~/tools/php-cs-fixer https://cs.symfony.com/download/php-cs-fixer-v2.phar
+    - chmod +x ~/tools/php-cs-fixer
 
 install:
     - composer install
